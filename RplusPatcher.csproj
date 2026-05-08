@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>netstandard2.1</TargetFramework>
+		<LangVersion>latest</LangVersion>
+		<Nullable>disable</Nullable>
+		<ImplicitUsings>disable</ImplicitUsings>
+
+		<RootNamespace>RplusPatcher</RootNamespace>
+		<Copyright>Wolfgang Kurz</Copyright>
+		<PackageProjectUrl>https://github.com/WolfgangKurz/LastOriginRplusPatcher</PackageProjectUrl>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<RepositoryUrl>https://github.com/WolfgangKurz/LastOriginRplusPatcher</RepositoryUrl>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Compile Remove="RplusSpriteSwitcher.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="RplusSpriteSwitcher.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Mono.Cecil" Version="0.10.4" PrivateAssets="all" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Reference Include="BepInEx.Core">
+			<HintPath>ref\BepInEx.Core.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+		<Reference Include="BepInEx.Preloader.Core">
+			<HintPath>ref\BepInEx.Preloader.Core.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+	</ItemGroup>
+</Project>
