@@ -5,6 +5,8 @@
 		<Nullable>disable</Nullable>
 		<ImplicitUsings>disable</ImplicitUsings>
 
+		<Version>0.1.0</Version>
+
 		<RootNamespace>RplusPatcher</RootNamespace>
 		<Copyright>Wolfgang Kurz</Copyright>
 		<PackageProjectUrl>https://github.com/WolfgangKurz/LastOriginRplusPatcher</PackageProjectUrl>
